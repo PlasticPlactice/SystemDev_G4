@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#job_info-container {
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    font-size: 25px;
+    line-height: 1;
+}
+
+tr {
+    height: 60px;
+}
+
+th {
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
+    color: gray;
+    font-weight: normal;
+}
+
+td {
+    vertical-align: top;
+    font-size: 35px;
+}
+
+.smaller-text {
+    font-size: 15px;
+}
+
+#button-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+	height: 45px;
+}
+
+#return-button {
+	font-size: 20px;
+    width: 125px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#return-button:hover {
+    background-color: lightgray;
+}
+
+#favorite-button {
+	font-size: 20px;
+	width: 200px;
+	background-color: pink;
+    border: none;
+	border-radius:5px;
+}
+
+#favorite-button:hover {
+	background-color: rgb(210, 160, 170);
+}
