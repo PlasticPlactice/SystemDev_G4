@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザ情報一覧</title>
+    <link rel="stylesheet" href="all-style.css">
+    <link rel="stylesheet" href="admin_user_list.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="search-by-id">
+        ID検索 <input type="text">
+        <button><span class="material-symbols-outlined">search</span></button>
+    </div>
+
+    <div id="result-section">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>名前</th>
+                <th>権限</th>
+                <th id="icons-th"></th>
+            </tr>
+            <tr>
+                <td class="text-align-center">4233101</td>
+                <td class="text-align-center">A山A男</td>
+                <td class="text-align-center">生徒</td>
+                <td class="text-align-center">
+                    <a href="admin_user_edit.html">
+                        <span class="material-symbols-outlined edit-icon">edit</span>
+                    </a>
+                    <span class="material-symbols-outlined delete-icon">delete</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="text-align-center">4232101</td>
+                <td class="text-align-center">B川B子</td>
+                <td class="text-align-center">生徒</td>
+                <td class="text-align-center">
+                    <a href="admin_user_edit.html">
+                        <span class="material-symbols-outlined edit-icon">edit</span>
+                    </a>
+                    <span class="material-symbols-outlined delete-icon">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-align-center">4200001</td>
+                <td class="text-align-center">C谷C助</td>
+                <td class="text-align-center">管理者</td>
+                <td class="text-align-center">
+                    <a href="admin_user_edit.html">
+                        <span class="material-symbols-outlined edit-icon">edit</span>
+                    </a>
+                    <span class="material-symbols-outlined delete-icon">delete</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="return-button-container">
+        <input type="button" value="戻る" id="return-button" onclick="history.back()">
+    </div>
+
+    <script>
+        document.querySelector("span.delete-icon").addEventListener("click", function () {
+            window.confirm("ID:○○○○○○○ 名前:○○○○  \nこのユーザの情報を削除しますか？")
+        });
+    </script>
+</body>
+</html>

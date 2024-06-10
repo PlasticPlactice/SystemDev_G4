@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+#result-section {
+    margin: 10px 0;
+}
+#result-section table {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 1000px;
+}
+
+#result-section th, #result-section td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#result-section th {
+    background-color: lightgray;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.return-button-container {
+    margin-left: 100px;
+}
+
+#return-button {
+    background-color: white;
+    border: 1px solid black;
+    height: 45px;
+    width: 125px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#return-button:hover {
+    background-color: lightgray;
+}
+
+.material-symbols-outlined {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-by-id {
+    text-align: right;
+    margin-right: 100px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+#search-by-id input[type="text"] {
+    height: 45px;
+}
+
+#search-by-id button {
+    padding-bottom: 6px;
+    vertical-align: middle;
+    padding-top: 8px;
+}
+
+.edit-icon {
+    color: gray;
+}
+
+.delete-icon {
+    margin-left: 7px;
+    color: #EB3223;
+}
+
+#icons-th {
+    width: 10%;
+}
+
+
+td a, td a:visited  {
+    text-decoration: none;
+}
