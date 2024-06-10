@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ログイン</title>
+    <link rel="stylesheet" href="all-style.css" />
+    <link rel="stylesheet" href="admin_user_register.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login-form">
+        <h2>ユーザ登録</h2>
+        <label for="id">ID</label>
+        <input type="text" id="id" placeholder="" />
+        <label for="password">名前</label>
+        <input type="text" id="text" placeholder="" />
+        <table class="checkbox-container">
+          <tr>
+            <td>
+              <div class="checkbox-container">
+                <input type="checkbox" id="admin-checkbox" />
+                <label for="admin-checkbox">この利用者を管理者にする</label>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <table class="button-table">
+          <tr>
+            <td>
+              <button
+                type="button"
+                class="cancelbtn"
+                onclick="location.href=''"
+              >
+                キャンセル
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="submitbtn"
+                onclick="location.href='#'"
+              >
+                完了
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
