@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生 求人情報一覧</title>
+    <link rel="stylesheet" href="all-style.css">
+    <link rel="stylesheet" href="admin_job_list.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="filtering-section">
+        <div class="section-container">
+            <p>地域</p>
+            <div class="checkbox-container">
+                <label><input type="checkbox">東北(岩手県内)</label>
+                <label><input type="checkbox">東北(岩手県外)</label>
+                <br>
+                <label><input type="checkbox">関東</label>
+                <label><input type="checkbox">関西</label>
+                <label><input type="checkbox">その他の地域</label>
+            </div>
+        </div>
+    
+        <div class="section-container border-top">
+            <p>業種・職種</p>
+            <div class="checkbox-container">
+                <label><input type="checkbox">情報(PG, SE)</label>
+                <label><input type="checkbox">情報(運用)</label>
+                <label><input type="checkbox">情報(インフラ)</label>
+                <br>
+                <label><input type="checkbox">卸売・小売</label>
+                <label><input type="checkbox">製造</label>
+                <label><input type="checkbox">デザイン業</label>
+                <label><input type="checkbox">全業種(事務)</label>
+            </div>
+        </div>
+    
+        <div class="section-container border-top">
+            <p>お気に入り</p>
+            <div class="checkbox-container">
+                <label><input type="checkbox">お気に入りに登録している求人情報</label>
+                <br>
+                <label><input type="checkbox">お気に入りに登録していない求人情報</label>
+            </div>
+        </div>
+    
+        <div class="search-button-container">
+            <input type="submit" value="検索" id="search-button" onclick="location.href='student_job_list.html'">
+        </div>
+    </div>
+
+    <div id="result-section">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>企業名</th>
+                <th>地域</th>
+                <th>業種・職種</th>
+                <th>年度</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td class="text-align-center">1</td>
+                <td class="padding-left-10"><a href="job_info.html">ABCシステム</a></td>
+                <td class="text-align-center">東北(岩手県内)</td>
+                <td class="text-align-center">情報(PG, SE)</td>
+                <td class="text-align-center">2023</td>
+                <td class="text-align-center"><span class="material-symbols-outlined">delete</span></td>
+            </tr>
+            <tr>
+                <td class="text-align-center">2</td>
+                <td class="padding-left-10"><a href="job_info.html">あいうえおホールディングス</a></td>
+                <td class="text-align-center">関東</td>
+                <td class="text-align-center">デザイン業</td>
+                <td class="text-align-center">2023</td>
+                <td class="text-align-center"><span class="material-symbols-outlined">delete</span></td>
+            </tr>
+            <tr>
+                <td class="text-align-center">3</td>
+                <td class="padding-left-10"><a href="job_info.html">123株式会社</a></td>
+                <td class="text-align-center">東北(岩手県外)</td>
+                <td class="text-align-center">製造</td>
+                <td class="text-align-center">2024</td>
+                <td class="text-align-center"><span class="material-symbols-outlined">delete</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="return-button-container">
+        <input type="button" value="戻る" id="return-button" onclick="history.back()">
+    </div>
+
+    <script>
+        document.querySelector("span.material-symbols-outlined").addEventListener("click", function () {
+            window.confirm("○○社の求人情報を削除しますか？")
+        });
+    </script>
+</body>
+</html>
