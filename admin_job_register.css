@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 25px 0;
+}
+
+.job-register-container {
+    width: 35%;
+}
+
+.job-register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-register-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+    
+.job-register-form input[type="number"] {
+    text-align: left;
+    padding: 10px;
+    width: calc(100% - 75px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="button"] {
+    margin-left: 10px;
+}
+
+.job-register-form select {
+    text-align: left;
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.job-register-form input[type="file"] {
+    text-align: left;
+    padding: 10px 0;
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+}
+
+
+
+.job-register-form a {
+  text-align: center;
+  color: blue;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.button-table {
+  width: 100%;
+  text-align: center;
+}
+
+.button-table td {
+  padding: 10px;
+}
+
+.cancelbtn {
+  width: auto;
+  font-weight: bold;
+  background-color: #f44336;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+
+.submitbtn {
+  width: 87px;
+  font-weight: bold;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 100px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-container label {
+  width: 100%;
+  white-space: nowrap;
+}

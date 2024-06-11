@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ログイン</title>
+    <link rel="stylesheet" href="all-style.css" />
+    <link rel="stylesheet" href="admin_job_register.css" />
+  </head>
+  <body>
+    <div class="job-register-container">
+      <form class="job-register-form">
+        <h2>求人情報登録</h2>
+        <label for="corporate_num">法人番号</label><br>
+        <input type="number" id="corporate_num" placeholder="" /><input type="button" value="検索" id="button1" /><br>
+
+        <label for="corporate_name">企業名</label>
+        <select name="corporate_name" id="corporate_name">
+            <option value="placeholder">---検索結果---</option>
+        </select>
+
+        <label for="year">年度</label>
+        <select name="year" id="year">
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+        </select>
+        
+        <label for="industry">業種</label>
+        <select name="industry" id="industry">
+            <option value="1">情報(PG, SE)</option>
+            <option value="2">情報(運用)</option>
+            <option value="3">情報(インフラ)</option>
+            <option value="4">卸売・小売</option>
+            <option value="5">製造</option>
+            <option value="6">デザイン業</option>
+            <option value="7">全業種(事務)</option>
+        </select>
+
+        <label for="area">地域</label>
+        <select name="area" id="area">
+            <option value="1">関東</option>
+            <option value="2">関西</option>
+            <option value="3">東北(岩手県外)</option>
+            <option value="4">東北(岩手県内)</option>
+            <option value="5">その他の地域</option>
+        </select>
+
+        <label for="pdf">法人番号</label>
+        <input type="file" id="pdf" placeholder="" />
+
+        <table class="button-table">
+          <tr>
+            <td>
+              <button
+                type="button"
+                class="cancelbtn"
+                onclick="location.href='admin_top.html'"
+              >
+                キャンセル
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="submitbtn"
+                onclick="location.href='admin_top.html'"
+              >
+                完了
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
