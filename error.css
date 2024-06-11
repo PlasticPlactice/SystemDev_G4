@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+.container {
+    border-radius: 10px;
+    width: 70%;
+    margin: 8% auto;
+    line-height: 5.6rem;
+    background-color: #D9D9D9;
+}
+
+.error_title {
+    text-align: center;
+}
+
+.error_text {
+    text-align: center;
+}
+
+.back_btn {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: #FFA7A7;
+}
+
+.btn {
+    text-align: center;
+}
