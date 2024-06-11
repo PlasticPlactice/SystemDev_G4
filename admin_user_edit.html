@@ -10,7 +10,7 @@
   <body>
     <div class="login-container">
       <form class="login-form">
-        <h2>ユーザ登録</h2>
+        <h2>ユーザ編集</h2>
         <label for="id">ID</label>
         <input type="text" id="id" placeholder="" />
         <label for="password">名前</label>
@@ -20,7 +20,7 @@
             <td>
               <div class="checkbox-container">
                 <input type="checkbox" id="admin-checkbox" />
-                <label for="admin-checkbox">この利用者を管理者にする</label>
+                <label for="admin-checkbox">パスワードリセット</label>
               </div>
             </td>
           </tr>
@@ -31,7 +31,7 @@
               <button
                 type="button"
                 class="cancelbtn"
-                onclick="location.href='admin_top.html'"
+                onclick="location.href='admin_user_list.html'"
               >
                 キャンセル
               </button>
@@ -41,7 +41,7 @@
                 type="button"
                 style="background-color: var(--button-color)"
                 class="submitbtn"
-                onclick="location.href='admin_top.html'"
+                onclick="location.href='admin_user_list.html'"
               >
                 完了
               </button>
